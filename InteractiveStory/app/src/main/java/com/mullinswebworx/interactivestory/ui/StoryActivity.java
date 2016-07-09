@@ -1,9 +1,12 @@
-package com.mullinswebworx.interactivestory;
+package com.mullinswebworx.interactivestory.ui;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
+
+import com.mullinswebworx.interactivestory.R;
+import com.mullinswebworx.interactivestory.model.Page;
 
 public class StoryActivity extends AppCompatActivity {
 
