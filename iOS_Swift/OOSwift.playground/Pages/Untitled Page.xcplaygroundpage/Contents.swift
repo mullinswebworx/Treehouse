@@ -41,7 +41,7 @@ coordinatePoint2.surroundingPoints()
 // Class
 
 class Enemy {
-    var life: Int = 5
+    var life: Int = 2
     var position: Point
     
     init(x: Int, y: Int) {
@@ -87,15 +87,39 @@ class Tower {
     }
 }
 
+class SuperEnemy: Enemy {
+    let isSuper: Bool = true
+    
+    override init(x: Int, y: Int) {
+        super.init(x: x, y: y)
+        self.life = 50
+    }
+}
+
+class laserTower: Tower {
+    
+    override init(x: Int, y: Int) {
+        super.init(x: x, y: y)
+        self.range = 100
+        self.strength = 100
+    }
+    
+    override func fireAtEnemy(enemy: Enemy) {
+        while enemy.life >= 0 {
+            enemy.decreaseHealth(strength)
+        }
+        print("Enemy destroyed!")
+    }
+}
+
 
 let tower = Tower(x: 0, y: 0)
 let enemy1 = Enemy(x: 1, y: 1)
-
-let enemy2 = Enemy(x: 3, y: 4)
-
 tower.fireAtEnemy(enemy1)
-tower.fireAtEnemy(enemy2)
 
+let laserTower1 = laserTower(x: 0, y: 0)
+let superEnemy = SuperEnemy(x: 20, y: 20)
+laserTower1.fireAtEnemy(superEnemy)
 
 
 
