@@ -13,6 +13,7 @@
 		FC0EF1E71D44845300DD1CD1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC0EF1E61D44845300DD1CD1 /* Assets.xcassets */; };
 		FC0EF1EA1D44845300DD1CD1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC0EF1E81D44845300DD1CD1 /* LaunchScreen.storyboard */; };
 		FC53F5A31D456BCC003451F6 /* FactModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC53F5A21D456BCC003451F6 /* FactModel.swift */; };
+		FC53F5A71D45856A003451F6 /* ColorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC53F5A61D45856A003451F6 /* ColorModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		FC0EF1E91D44845300DD1CD1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FC0EF1EB1D44845300DD1CD1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FC53F5A21D456BCC003451F6 /* FactModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FactModel.swift; sourceTree = "<group>"; };
+		FC53F5A61D45856A003451F6 /* ColorModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				FC0EF1E61D44845300DD1CD1 /* Assets.xcassets */,
 				FC0EF1E81D44845300DD1CD1 /* LaunchScreen.storyboard */,
 				FC0EF1EB1D44845300DD1CD1 /* Info.plist */,
+				FC53F5A61D45856A003451F6 /* ColorModel.swift */,
 			);
 			path = FunFacts;
 			sourceTree = "<group>";
@@ -142,6 +145,7 @@
 				FC53F5A31D456BCC003451F6 /* FactModel.swift in Sources */,
 				FC0EF1E21D44845300DD1CD1 /* ViewController.swift in Sources */,
 				FC0EF1E01D44845300DD1CD1 /* AppDelegate.swift in Sources */,
+				FC53F5A71D45856A003451F6 /* ColorModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
