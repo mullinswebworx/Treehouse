@@ -19,8 +19,8 @@ func muteNotifications(day: String) -> Bool {
 let result = weekdayOrWeekend(week[4])
 let isMuted = muteNotifications(result)
 
-enum Day {
-    case Monday
+enum Day: Int {
+    case Monday = 1
     case Tuesday
     case Wednesday
     case Thursday
@@ -70,3 +70,70 @@ enum ColorComponents {
 }
 
 ColorComponents.RGB(red: 61.0, green: 120.0, blue: 198.0, alpha:1.0).color()
+
+
+
+// Raw Values
+
+enum Coin: Double {
+    case Penny = 0.01
+    case Nickel = 0.05
+    case Dime = 0.10
+    case Quarter = 0.25
+}
+
+
+let coins: [Coin] = [.Penny, .Nickel, .Dime, .Dime, .Quarter, .Quarter, .Quarter]
+var count: Int = 0
+for case .Quarter in coins {
+    count += 1
+}
+
+func totalValue(coins: [Coin]) -> Double {
+    var total: Double = 0
+    for coin in coins {
+       total += coin.rawValue
+    }
+    return total
+}
+
+totalValue(coins)
+
+
+
+enum HTTPMethod: String {
+    case POST, GET, PUT, DELETE
+}
+
+HTTPMethod.GET.rawValue
+
+enum HTTPStatusCodes: Int {
+    case Continue = 100
+    case Success = 200
+    case Unauthorized = 401
+    case Forbidden = 403
+    case NotFound = 404
+}
+
+let statusCode  = 200
+if let httpCode = HTTPStatusCodes(rawValue: statusCode) {
+    print(httpCode)
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
